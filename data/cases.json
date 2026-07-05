@@ -3,7 +3,7 @@
     {
       "slug": "geoanalytics",
       "protected": false,
-      "cover": "images/projects/geoanalytics/cover.png",
+      "cover": "images/projects/geoanalytics/cover.svg",
       "client": "Citymobil",
       "category": "B2B · Data Viz",
       "year": "2021-2022",
@@ -17,7 +17,7 @@
     {
       "slug": "intranet",
       "protected": false,
-      "cover": "images/projects/intranet/cover.png",
+      "cover": "images/projects/intranet/cover.svg",
       "client": "Citymobil",
       "category": "Internal · Web",
       "year": "2021",
@@ -31,7 +31,7 @@
     {
       "slug": "operators-account",
       "protected": false,
-      "cover": "images/projects/operators-account/cover.png",
+      "cover": "images/projects/operators-account/cover.svg",
       "client": "Citymobil",
       "category": "Internal · Call center",
       "year": "2020-2021",
@@ -45,7 +45,7 @@
     {
       "slug": "meeting-rooms",
       "protected": false,
-      "cover": "images/projects/meeting-rooms/cover.png",
+      "cover": "images/projects/meeting-rooms/cover.svg",
       "client": "Rambler & Co",
       "category": "Internal · Web",
       "year": "2019",
@@ -61,7 +61,7 @@
     {
       "slug": "management-accounting",
       "protected": false,
-      "cover": "images/projects/management-accounting/cover.png",
+      "cover": "images/projects/management-accounting/cover.svg",
       "client": "Rambler & Co",
       "category": "Internal · Finance",
       "year": "2019",
