@@ -376,3 +376,118 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
   font-size: 12px;
   color: var(--color-text-muted);
 }
+
+/* ============================================================
+   About
+   ============================================================ */
+.about {
+  padding-bottom: var(--space-section);
+}
+
+.about > .mono {
+  margin-bottom: 24px;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 64px;
+}
+
+.about__photo {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: var(--color-surface);
+}
+
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__name {
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+
+.about__location {
+  margin-bottom: 20px;
+}
+
+.about__bio {
+  margin-bottom: 16px;
+  max-width: 640px;
+}
+
+.about__skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+.skill-block ul {
+  list-style: none;
+  margin-top: 12px;
+}
+
+.skill-block li {
+  padding: 6px 0;
+  font-size: var(--size-body);
+  border-top: 0.5px solid var(--color-border);
+}
+
+.skill-block li:first-child {
+  border-top: none;
+}
+
+.about__experience .mono {
+  margin-bottom: 12px;
+}
+
+.experience-list {
+  list-style: none;
+}
+
+.experience-list li {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 24px;
+  padding: 16px 0;
+  border-top: 0.5px solid var(--color-border);
+  align-items: baseline;
+}
+
+.experience-list__role {
+  font-weight: 500;
+}
+
+.experience-list__company {
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 767px) {
+  .about { padding-bottom: var(--space-section-mobile); }
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .about__photo {
+    max-width: 240px;
+  }
+  .about__name { font-size: 28px; }
+  .about__skills {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .experience-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
