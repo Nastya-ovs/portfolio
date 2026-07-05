@@ -1,0 +1,76 @@
+{
+  "selected": [
+    {
+      "slug": "geoanalytics",
+      "protected": false,
+      "cover": "images/projects/geoanalytics/cover.png",
+      "client": "Citymobil",
+      "category": "B2B · Data Viz",
+      "year": "2021-2022",
+      "name_en": "Geoanalytics",
+      "name_ru": "Геоаналитика",
+      "summary_en": "A tool for operating managers to spot supply/demand imbalance across cities.",
+      "summary_ru": "Инструмент для операционных менеджеров, чтобы находить дисбаланс спроса и предложения в городах.",
+      "metric_en": null,
+      "metric_ru": null
+    },
+    {
+      "slug": "intranet",
+      "protected": false,
+      "cover": "images/projects/intranet/cover.png",
+      "client": "Citymobil",
+      "category": "Internal · Web",
+      "year": "2021",
+      "name_en": "Intranet",
+      "name_ru": "Интранет",
+      "summary_en": "Internal employee portal built in one month with search across people and departments.",
+      "summary_ru": "Внутренний портал сотрудников за месяц с поиском по людям и отделам.",
+      "metric_en": "Shipped in 1 month",
+      "metric_ru": "Запуск за 1 месяц"
+    },
+    {
+      "slug": "operators-account",
+      "protected": false,
+      "cover": "images/projects/operators-account/cover.png",
+      "client": "Citymobil",
+      "category": "Internal · Call center",
+      "year": "2020-2021",
+      "name_en": "Operator's account",
+      "name_ru": "Кабинет оператора",
+      "summary_en": "Redesigned the call-center interface to shorten support calls.",
+      "summary_ru": "Редизайн интерфейса колл-центра, чтобы сократить время звонка.",
+      "metric_en": "−30% avg call duration",
+      "metric_ru": "−30% средней длительности звонка"
+    },
+    {
+      "slug": "meeting-rooms",
+      "protected": false,
+      "cover": "images/projects/meeting-rooms/cover.png",
+      "client": "Rambler & Co",
+      "category": "Internal · Web",
+      "year": "2019",
+      "name_en": "Meeting rooms",
+      "name_ru": "Переговорки",
+      "summary_en": "A booking system for meeting rooms across the Rambler offices.",
+      "summary_ru": "Сервис бронирования переговорных комнат в офисах Рамблера.",
+      "metric_en": null,
+      "metric_ru": null
+    }
+  ],
+  "other": [
+    {
+      "slug": "management-accounting",
+      "protected": false,
+      "cover": "images/projects/management-accounting/cover.png",
+      "client": "Rambler & Co",
+      "category": "Internal · Finance",
+      "year": "2019",
+      "name_en": "Management Accounting",
+      "name_ru": "Учётная система",
+      "summary_en": "An internal management-accounting system for finance teams.",
+      "summary_ru": "Внутренняя система управленческого учёта для финансовых отделов.",
+      "metric_en": null,
+      "metric_ru": null
+    }
+  ]
+}
