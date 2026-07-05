@@ -114,3 +114,71 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
     scroll-behavior: auto !important;
   }
 }
+
+/* ============================================================
+   Header
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(247, 247, 247, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 0.5px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.site-header.is-scrolled {
+  border-bottom-color: var(--color-border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.site-logo {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: var(--size-small);
+  color: var(--color-text-muted);
+}
+
+.site-nav a {
+  transition: color 0.15s ease;
+}
+
+.site-nav a:hover { color: var(--color-text); }
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.lang-toggle [data-lang-btn].is-active {
+  color: var(--color-text);
+}
+
+@media (max-width: 640px) {
+  .site-nav {
+    gap: 16px;
+  }
+  .site-nav a[href="#about"] { display: none; }
+}
