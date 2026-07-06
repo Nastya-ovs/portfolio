@@ -2,7 +2,7 @@
 
 Personal portfolio site for a Senior Product Designer.
 
-**Live:** https://nastyaovs2016-cloud.github.io/portfolio
+**Live:** https://nastya-ovs.github.io/portfolio
 
 ## Stack
 
