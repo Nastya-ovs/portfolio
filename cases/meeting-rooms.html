@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting rooms — Anastasia Ovsyannikova</title>
+  <meta name="description" content="A booking system for meeting rooms across Rambler offices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo">Anastasia Ovsyannikova</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span data-lang-btn="en">EN</span>
+          <span class="lang-toggle__sep">/</span>
+          <span data-lang-btn="ru">RU</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="case container">
+    <a href="../index.html#projects" class="case__back" data-i18n="case.back">← Back to projects</a>
+    <p class="mono case__breadcrumb">Rambler &amp; Co · Internal · Web</p>
+    <h1 class="case__title" data-lang-content>
+      <span data-lang="en">Meeting rooms</span>
+      <span data-lang="ru">Переговорки</span>
+    </h1>
+    <div class="case__lead" data-lang-content>
+      <p data-lang="en">The old meeting-room booking flow needed to be replaced with something more convenient. We started with user interviews to catch the biggest pain points before designing anything.</p>
+      <p data-lang="ru">Нужно было переделать старый функционал бронирования переговорок на новый, более удобный. В начале работы над проектом мы провели интервью с пользователями и собрали основные недочёты текущей системы.</p>
+    </div>
+
+    <dl class="case__meta">
+      <div><dt class="mono" data-i18n="case.role">Role</dt><dd>Product Designer</dd></div>
+      <div><dt class="mono" data-i18n="case.timeline">Timeline</dt><dd>2019</dd></div>
+      <div><dt class="mono" data-i18n="case.team">Team</dt><dd>PM, engineers</dd></div>
+      <div><dt class="mono" data-i18n="case.result">Result</dt><dd>Shipped internally</dd></div>
+    </dl>
+
+    <figure class="case__hero">
+      <img src="../images/projects/meeting-rooms/main.png" alt="Meeting rooms main screen">
+    </figure>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.problem">The Problem</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>Interviews surfaced these problems in the current tool:</p>
+          <ol>
+            <li>Past meetings had no detailed view — you couldn't look up their info.</li>
+            <li>No way to check another employee's schedule.</li>
+            <li>No responsive mobile version.</li>
+            <li>Users didn't realize the calendar toggle existed and clicked arrows to move between dates instead.</li>
+            <li>You could only invite one attendee to a meeting at a time.</li>
+          </ol>
+          <figure><img src="../images/projects/meeting-rooms/2.png" alt="Old interface issues"></figure>
+        </div>
+        <div data-lang="ru">
+          <p>В ходе интервью пользователи отмечали следующие проблемы:</p>
+          <ol>
+            <li>Если время встречи уже прошло, нельзя посмотреть детальную информацию по ней.</li>
+            <li>Нельзя посмотреть расписание сотрудника.</li>
+            <li>Нет адаптивной мобильной версии.</li>
+            <li>Пользователи не понимают, как включить календарь, и переключаются между датами с помощью стрелок.</li>
+            <li>На встречу можно пригласить только одного пользователя.</li>
+          </ol>
+          <figure><img src="../images/projects/meeting-rooms/2.png" alt="Проблемы старого интерфейса"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.process">The Process</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>The company had 16 meeting rooms with different capacities and equipment. In the old flow, checking room specs required opening a tooltip behind a question icon — slow. We added header filters so you can set the parameters you need and see only matching rooms.</p>
+          <figure><img src="../images/projects/meeting-rooms/3.png" alt="Filters in the header"></figure>
+          <p>Date-picking needed to be simplified. We added a panel showing the next several dates so users can jump between them with a single click.</p>
+          <figure><img src="../images/projects/meeting-rooms/4.png" alt="Quick-date panel"></figure>
+          <p>For dates further out, or for users used to a full calendar, clicking the date opens the familiar month view.</p>
+          <figure><img src="../images/projects/meeting-rooms/5.png" alt="Full-calendar view"></figure>
+        </div>
+        <div data-lang="ru">
+          <p>Всего в компании 16 переговорок, каждая со своей вместимостью и оснащением. В старом интерфейсе, чтобы узнать оснащение переговорки, нужно было смотреть дополнительную информацию под иконкой вопроса. Это отнимало время. В шапку добавили фильтры, с помощью которых можно сразу указать нужные параметры и посмотреть все подходящие переговорки.</p>
+          <figure><img src="../images/projects/meeting-rooms/3.png" alt="Фильтры в шапке"></figure>
+          <p>Поскольку у пользователей были сложности с переключением даты, этот процесс нужно было упростить. В шапке появилась панель с ближайшими датами на месяц — одним кликом переключаешься между ними.</p>
+          <figure><img src="../images/projects/meeting-rooms/4.png" alt="Панель ближайших дат"></figure>
+          <p>Если нужна более отдалённая дата или привычнее календарь — при нажатии на дату около фильтров открывается стандартный календарь.</p>
+          <figure><img src="../images/projects/meeting-rooms/5.png" alt="Полноэкранный календарь"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.solution">The Solution</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>Feedback made it clear we needed a scheduler — a view of all invited employees' calendars and the selected room, so you can pick a time that works. The scheduler appears when creating a meeting if there's a time conflict.</p>
+          <figure><img src="../images/projects/meeting-rooms/6.png" alt="Scheduler with attendee availability"></figure>
+          <p>Inside the scheduler the same actions are possible as in the popup — you can change date/time, attendees, or swap to a different room.</p>
+          <figure><img src="../images/projects/meeting-rooms/7.png" alt="Scheduler edit actions"></figure>
+          <p>Meeting details were reworked. In the new layout you can view details even after the meeting ends, and the meeting owner is always visible.</p>
+          <figure><img src="../images/projects/meeting-rooms/8.png" alt="Meeting details view"></figure>
+          <p>A responsive mobile version was designed as well.</p>
+          <figure><img src="../images/projects/meeting-rooms/9.png" alt="Mobile version"></figure>
+          <p>15 users tested the flow across two scenarios covering all new functionality. They quickly found filters, understood the new date panel, and rated the interface improvements positively.</p>
+        </div>
+        <div data-lang="ru">
+          <p>По обратной связи стало понятно, что людям нужен планировщик — просмотр личного расписания приглашённых сотрудников и переговорки, чтобы выбрать удобное время. Планировщик появляется при создании встречи, если возникает конфликт по времени.</p>
+          <figure><img src="../images/projects/meeting-rooms/6.png" alt="Планировщик с расписанием участников"></figure>
+          <p>Функционал планировщика повторяет попап — можно поменять дату и время, участников или выбрать другую переговорку.</p>
+          <figure><img src="../images/projects/meeting-rooms/7.png" alt="Действия в планировщике"></figure>
+          <p>Также поправили отображение информации по встрече. В новом макете деталку можно посмотреть даже если встреча закончилась, всегда виден создатель встречи.</p>
+          <figure><img src="../images/projects/meeting-rooms/8.png" alt="Деталка встречи"></figure>
+          <p>Была спроектирована удобная мобильная версия.</p>
+          <figure><img src="../images/projects/meeting-rooms/9.png" alt="Мобильная версия"></figure>
+          <p>15 пользователей прошли тестирование в двух сценариях, охватывающих весь новый функционал. Пользователи быстро находили фильтры, разобрались с новой панелью дат, все улучшения были оценены положительно.</p>
+        </div>
+      </div>
+    </section>
+
+    <a href="management-accounting.html" class="case__next" data-i18n="case.next">Next project →</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="mono" data-i18n="footer.copyright">© 2026 Anastasia Ovsyannikova</p>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry">Email</a>
+        <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../script.js" data-base="../"></script>
+</body>
+</html>
