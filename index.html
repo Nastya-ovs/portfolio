@@ -59,22 +59,27 @@
 
     <section id="about" class="about container" data-reveal>
       <p class="mono" data-i18n="about.label">About</p>
-      <div class="about__grid">
-        <div class="about__photo">
-          <img src="images/avatar.svg" alt="Anastasia Ovsyannikova">
-        </div>
-        <div class="about__text">
-          <h2 class="about__name">Anastasia Ovsyannikova</h2>
-          <p class="about__location mono" data-i18n="about.location">Based in Russia · Available worldwide</p>
-          <p class="about__bio" data-i18n="about.bio_p1"></p>
-          <p class="about__bio" data-i18n="about.bio_p2"></p>
-          <p class="about__bio" data-i18n="about.bio_p3"></p>
-        </div>
+
+      <div class="about__intro">
+        <h2 class="about__name">Anastasia Ovsyannikova</h2>
+        <p class="about__location mono" data-i18n="about.location">Based in Russia · Available worldwide</p>
+        <p class="about__bio" data-i18n="about.bio_p1"></p>
+        <p class="about__bio" data-i18n="about.bio_p2"></p>
+        <p class="about__bio" data-i18n="about.bio_p3"></p>
       </div>
 
       <div class="about__skills">
         <div class="skill-block">
-          <p class="mono" data-i18n="about.skills_design">Design skills</p>
+          <p class="mono" data-i18n="about.skills_tools">Design Tools</p>
+          <ul>
+            <li>Figma</li>
+            <li>Miro</li>
+            <li>Jira</li>
+            <li>Confluence</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <p class="mono" data-i18n="about.skills_design">Design Skills</p>
           <ul>
             <li>Product Design</li>
             <li>Design Systems</li>
@@ -84,68 +89,163 @@
             <li>Usability Testing</li>
             <li>Prototyping</li>
             <li>Design QA</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <p class="mono" data-i18n="about.skills_technical">Technical Skills</p>
+          <ul>
+            <li>Basic HTML/CSS</li>
             <li>Enterprise UX</li>
             <li>Platform Design</li>
             <li>Data Visualization</li>
           </ul>
         </div>
         <div class="skill-block">
-          <p class="mono" data-i18n="about.skills_tools">Tools</p>
+          <p class="mono" data-i18n="about.skills_soft">Soft Skills</p>
           <ul>
-            <li>Figma</li>
-            <li>Miro</li>
-            <li>Jira</li>
-            <li>Confluence</li>
-            <li>Basic HTML/CSS</li>
-          </ul>
-        </div>
-        <div class="skill-block">
-          <p class="mono" data-i18n="about.skills_languages">Languages</p>
-          <ul>
-            <li>Russian — Native</li>
-            <li>English — Professional</li>
-            <li>Japanese — Beginner</li>
+            <li>Cross-functional Collaboration</li>
+            <li>User Empathy</li>
+            <li>Communication</li>
+            <li>Adaptability</li>
           </ul>
         </div>
       </div>
 
       <div class="about__experience">
         <p class="mono" data-i18n="about.experience_label">Experience</p>
-        <ol class="experience-list">
-          <li>
-            <span class="experience-list__role">Senior Product Designer</span>
-            <span class="experience-list__company">Kaspersky</span>
-            <span class="experience-list__years mono">2022 — Present</span>
-          </li>
-          <li>
-            <span class="experience-list__role">Designer of Internal Products</span>
-            <span class="experience-list__company">Citymobil</span>
-            <span class="experience-list__years mono">2020 — 2022</span>
-          </li>
-          <li>
-            <span class="experience-list__role">Product Designer</span>
-            <span class="experience-list__company">Rambler &amp; Co</span>
-            <span class="experience-list__years mono">2019 — 2020</span>
-          </li>
-          <li>
-            <span class="experience-list__role">Product Designer</span>
-            <span class="experience-list__company">Superjob</span>
-            <span class="experience-list__years mono">2019 — 2020</span>
-          </li>
-        </ol>
+
+        <article class="experience-item">
+          <header class="experience-item__header">
+            <div>
+              <h3 class="experience-item__role" data-lang-content>
+                <span data-lang="en">Senior Product Designer</span>
+                <span data-lang="ru">Senior Product Designer</span>
+              </h3>
+              <p class="experience-item__company">Kaspersky</p>
+            </div>
+            <span class="experience-item__years mono">2022 — Present</span>
+          </header>
+          <ul class="experience-item__bullets" data-lang-content>
+            <li data-lang="en">Helped shape XDR from early stages as a new product.</li>
+            <li data-lang="ru">Помогала запускать XDR с ранних стадий как новый продукт.</li>
+            <li data-lang="en">Led a full redesign of SIEM using design-system foundations.</li>
+            <li data-lang="ru">Вела полный редизайн SIEM на основе дизайн-системы.</li>
+            <li data-lang="en">Defined platform UX patterns and shared foundations for product integration.</li>
+            <li data-lang="ru">Определяла UX-паттерны платформы и общие основания для интеграции продуктов.</li>
+            <li data-lang="en">Designed shared platform areas including asset management, dashboards, reports, and tasks.</li>
+            <li data-lang="ru">Проектировала общие платформенные разделы: управление активами, дашборды, отчёты, задачи.</li>
+            <li data-lang="en">Improved design quality through formalised design review and ongoing design QA.</li>
+            <li data-lang="ru">Улучшала качество дизайна через формализованный design review и постоянный design QA.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <header class="experience-item__header">
+            <div>
+              <h3 class="experience-item__role" data-lang-content>
+                <span data-lang="en">Designer of Internal Products</span>
+                <span data-lang="ru">Дизайнер внутренних продуктов</span>
+              </h3>
+              <p class="experience-item__company">Citymobil</p>
+            </div>
+            <span class="experience-item__years mono">2020 — 2022</span>
+          </header>
+          <ul class="experience-item__bullets" data-lang-content>
+            <li data-lang="en">Designed internal tools for call-center operators, operating managers, and Citymobil employees.</li>
+            <li data-lang="ru">Проектировала внутренние инструменты для операторов колл-центра, операционных менеджеров и сотрудников.</li>
+            <li data-lang="en">Reduced average call duration by 30% through a redesigned call-center interface.</li>
+            <li data-lang="ru">Снизила среднюю длительность звонка на 30% через редизайн интерфейса колл-центра.</li>
+            <li data-lang="en">Delivered the company intranet design within one month.</li>
+            <li data-lang="ru">Спроектировала корпоративный интранет за один месяц.</li>
+            <li data-lang="en">Added and documented new design-system components.</li>
+            <li data-lang="ru">Добавляла и документировала новые компоненты дизайн-системы.</li>
+            <li data-lang="en">Conducted usability testing and in-depth interviews to inform design decisions.</li>
+            <li data-lang="ru">Проводила usability-тестирование и глубинные интервью для дизайн-решений.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <header class="experience-item__header">
+            <div>
+              <h3 class="experience-item__role" data-lang-content>
+                <span data-lang="en">Product Designer</span>
+                <span data-lang="ru">Продуктовый дизайнер</span>
+              </h3>
+              <p class="experience-item__company">Rambler &amp; Co</p>
+            </div>
+            <span class="experience-item__years mono">2019 — 2020</span>
+          </header>
+          <ul class="experience-item__bullets" data-lang-content>
+            <li data-lang="en">Designed and prototyped web and mobile interfaces for Rambler's internal employee portal.</li>
+            <li data-lang="ru">Проектировала и прототипировала веб и мобильные интерфейсы внутреннего портала сотрудников Рамблера.</li>
+            <li data-lang="en">Conducted user interviews and usability testing to validate solutions.</li>
+            <li data-lang="ru">Проводила интервью и юзабилити-тесты для валидации решений.</li>
+            <li data-lang="en">Created a UI kit to improve consistency across the product.</li>
+            <li data-lang="ru">Создала UI-кит для согласованности продукта.</li>
+            <li data-lang="en">Introduced product analytics and research practices into the workflow.</li>
+            <li data-lang="ru">Внедрила продуктовую аналитику и исследовательские практики в процесс.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <header class="experience-item__header">
+            <div>
+              <h3 class="experience-item__role" data-lang-content>
+                <span data-lang="en">Product Designer</span>
+                <span data-lang="ru">Продуктовый дизайнер</span>
+              </h3>
+              <p class="experience-item__company">Superjob</p>
+            </div>
+            <span class="experience-item__years mono">2019 — 2020</span>
+          </header>
+          <ul class="experience-item__bullets" data-lang-content>
+            <li data-lang="en">Designed interaction and visual solutions for web, iOS, and Android apps.</li>
+            <li data-lang="ru">Проектировала взаимодействие и визуал для веб, iOS и Android приложений.</li>
+            <li data-lang="en">Contributed to the design system and UI library.</li>
+            <li data-lang="ru">Вносила вклад в дизайн-систему и UI-библиотеку.</li>
+            <li data-lang="en">Created prototypes and wireframes for new product concepts.</li>
+            <li data-lang="ru">Создавала прототипы и вайрфреймы для новых продуктовых концепций.</li>
+            <li data-lang="en">Initiated user interviews and built a research participant base.</li>
+            <li data-lang="ru">Инициировала пользовательские интервью и собирала базу респондентов.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="contact container" data-reveal>
-      <p class="mono" data-i18n="contact.label">Let's work together</p>
-      <p class="contact__blurb" data-i18n="contact.blurb">Open to product design roles and select consulting projects.</p>
-      <p class="contact__status">
-        <span class="contact__status-dot" aria-hidden="true"></span>
-        <span data-i18n="contact.status_available">Currently available</span>
-      </p>
-      <div class="contact__cta">
-        <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry" class="btn btn--primary" data-i18n="contact.email_button">Email</a>
-        <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank" rel="noopener" class="btn btn--outline" data-i18n="contact.linkedin_button">LinkedIn</a>
+    <section id="contact" class="contact-card container" data-reveal>
+      <div class="contact-card__inner">
+        <div class="contact-card__left">
+          <h2 class="contact-card__title" data-lang-content>
+            <span data-lang="en">If you're solving hard design problems, <em>let's talk.</em></span>
+            <span data-lang="ru">Если вы решаете сложные дизайн-задачи, <em>давайте поговорим.</em></span>
+          </h2>
+          <p class="contact-card__blurb" data-i18n="contact.blurb">Open to product design roles at companies that treat design as a strategic function. B2B, enterprise, platform UX.</p>
+          <div class="contact-card__cta">
+            <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry" class="btn btn--primary" data-i18n="contact.email_button">Send me an email ↗</a>
+            <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank" rel="noopener" class="btn btn--outline" data-i18n="contact.linkedin_button">LinkedIn ↗</a>
+          </div>
+        </div>
+        <div class="contact-card__right">
+          <div class="contact-tile">
+            <p class="mono" data-i18n="contact.tile_location">Location</p>
+            <p class="contact-tile__value" data-i18n="contact.tile_location_value">Russia · Remote-friendly</p>
+          </div>
+          <div class="contact-tile">
+            <p class="mono" data-i18n="contact.tile_availability">Availability</p>
+            <p class="contact-tile__value contact-tile__value--status">
+              <span class="contact__status-dot" aria-hidden="true"></span>
+              <span data-i18n="contact.status_available">Currently available</span>
+            </p>
+          </div>
+          <div class="contact-tile">
+            <p class="mono" data-i18n="contact.tile_focus">Focus</p>
+            <p class="contact-tile__value" data-i18n="contact.tile_focus_value">Enterprise B2B · Platform UX · Design systems</p>
+          </div>
+          <div class="contact-tile">
+            <p class="mono" data-i18n="contact.tile_languages">Languages</p>
+            <p class="contact-tile__value" data-i18n="contact.tile_languages_value">Russian · English</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
