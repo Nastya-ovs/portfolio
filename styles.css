@@ -215,18 +215,20 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background: rgba(22, 163, 74, 0.10);
-  color: #16A34A;
+  background: #DFF8F3;
+  border-color: #93D9CC;
+  border: 0.5px solid;
+  color: #04715F;
   border-radius: var(--radius-pill);
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .hero__badge-dot {
   width: 8px;
   height: 8px;
-  background: #16A34A;
+  background: #04715F;
   border-radius: 50%;
   display: inline-block;
 }
@@ -234,7 +236,7 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
 .hero__title {
   font-size: clamp(44px, 5.5vw, 72px);
   max-width: 980px;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   letter-spacing: -0.02em;
   line-height: 1.1;
   font-weight: 700;
@@ -246,27 +248,28 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
 }
 
 .hero__subtitle {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--color-text-muted);
   max-width: 780px;
   line-height: 1.55;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .hero__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 48px;
 }
 
 .hero__tag {
-  padding: 8px 16px;
-  background: rgba(51, 94, 221, 0.08);
-  color: var(--color-accent);
-  border-radius: var(--radius-pill);
-  font-size: 14px;
+  padding: 4px 8px;
+  background: #EEF2FC;
+  border: 0.5px solid;
+  border-radius: 999px;
+  font-size: 12px;
   font-weight: 500;
+  color: #2C51BD;
 }
 
 .hero__cta {
