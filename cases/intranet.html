@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intranet — Anastasia Ovsyannikova</title>
+  <meta name="description" content="Internal employee portal built in one month.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo">Anastasia Ovsyannikova</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span data-lang-btn="en">EN</span>
+          <span class="lang-toggle__sep">/</span>
+          <span data-lang-btn="ru">RU</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="case container">
+    <a href="../index.html#projects" class="case__back" data-i18n="case.back">← Back to projects</a>
+    <p class="mono case__breadcrumb">Citymobil · Internal · Web</p>
+    <h1 class="case__title" data-lang-content>
+      <span data-lang="en">Intranet</span>
+      <span data-lang="ru">Интранет</span>
+    </h1>
+    <div class="case__lead" data-lang-content>
+      <p data-lang="en">I designed the internal portal for Citymobil employees. Because we were about to switch to a partner-provided intranet, our version had a focused scope and a hard deadline.</p>
+      <p data-lang="ru">Я работала над созданием внутреннего портала для сотрудников Ситимобил. В скором времени мы должны были перейти на интранет от партнёров, поэтому нужен был портал с ограниченным функционалом и конкретной целью.</p>
+    </div>
+
+    <dl class="case__meta">
+      <div><dt class="mono" data-i18n="case.role">Role</dt><dd>Product Designer</dd></div>
+      <div><dt class="mono" data-i18n="case.timeline">Timeline</dt><dd>1 month, 2021</dd></div>
+      <div><dt class="mono" data-i18n="case.team">Team</dt><dd>PM, 2 engineers</dd></div>
+      <div><dt class="mono" data-i18n="case.result">Result</dt><dd>Shipped in 1 month</dd></div>
+    </dl>
+
+    <figure class="case__hero">
+      <img src="../images/projects/intranet/main.png" alt="Intranet main screen">
+    </figure>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.problem">The Problem</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>Before the portal existed, there was no single source of information about employees. It lived in Excel sheets and Notion pages — each covered only part of the org, and information was often out of date because updates were manual.</p>
+        </div>
+        <div data-lang="ru">
+          <p>До появления портала не было единого источника, где была бы собрана информация по всем сотрудникам. Были либо Excel-таблицы, либо странички в Notion, но везде была только часть сотрудников, и информация не всегда была актуальна — обновляли вручную.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.process">The Process</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>We scoped down to four core needs:</p>
+          <ol>
+            <li>Find a specific person's contacts or someone from a department</li>
+            <li>Find an employee's manager, HR BP, and colleagues</li>
+            <li>See headcount and structure of current departments</li>
+            <li>See and edit your own data</li>
+          </ol>
+        </div>
+        <div data-lang="ru">
+          <p>Мы сузили скоуп до четырёх основных задач:</p>
+          <ol>
+            <li>Поиск контактов конкретного человека или кого-то из отдела</li>
+            <li>Поиск руководителя, HR BP и коллег отдельного сотрудника</li>
+            <li>Возможность увидеть количество людей и структуру департаментов</li>
+            <li>Возможность увидеть и изменить свои данные</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.solution">The Solution</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>A convenient profile where each employee can write an intro, take time off, and keep contact info up to date.</p>
+          <figure><img src="../images/projects/intranet/1.png" alt="Employee profile"></figure>
+          <p>The left-hand menu shows the department hierarchy — you can click through to a department page. A manager can attach an optional Notion link.</p>
+          <figure><img src="../images/projects/intranet/2.png" alt="Department hierarchy in left menu"></figure>
+          <p>Search covers both people and departments at once.</p>
+          <figure><img src="../images/projects/intranet/3.png" alt="Search across people and departments"></figure>
+          <p>In search results, you can toggle between people and departments, and filter people by department.</p>
+          <figure><img src="../images/projects/intranet/4.png" alt="Search results with filters"></figure>
+        </div>
+        <div data-lang="ru">
+          <p>Сделали удобный профиль, где каждый сотрудник может написать интро о себе, оформить отпуск и оставить актуальные контактные данные.</p>
+          <figure><img src="../images/projects/intranet/1.png" alt="Профиль сотрудника"></figure>
+          <p>В левом меню можно посмотреть иерархию отделов и перейти на страницу отдела. Также добавили ссылку на Notion, которую при необходимости мог оставить руководитель.</p>
+          <figure><img src="../images/projects/intranet/2.png" alt="Иерархия отделов в левом меню"></figure>
+          <p>Поиск ведётся сразу и по сотрудникам, и по отделам.</p>
+          <figure><img src="../images/projects/intranet/3.png" alt="Поиск по сотрудникам и отделам"></figure>
+          <p>В результатах поиска можно переключаться между сотрудниками и отделами. При поиске человека можно использовать фильтр по отделам.</p>
+          <figure><img src="../images/projects/intranet/4.png" alt="Результаты поиска с фильтрами"></figure>
+        </div>
+      </div>
+    </section>
+
+    <a href="operators-account.html" class="case__next" data-i18n="case.next">Next project →</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="mono" data-i18n="footer.copyright">© 2026 Anastasia Ovsyannikova</p>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry">Email</a>
+        <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../script.js" data-base="../"></script>
+</body>
+</html>
