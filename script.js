@@ -151,9 +151,29 @@
       const res = await fetch(base + 'data/cases.json', { cache: 'no-cache' });
       cases = await res.json();
       renderCases(currentLang);
+      setupReveal();
     } catch (err) {
       console.error('Failed to load cases:', err);
     }
+  };
+
+  // ==========================================================
+  // Scroll reveal (fade-in on entering viewport)
+  // ==========================================================
+  const setupReveal = () => {
+    if (typeof IntersectionObserver === 'undefined') {
+      document.querySelectorAll('[data-reveal]').forEach((el) => el.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-reveal]:not(.is-visible)').forEach((el) => io.observe(el));
   };
 
   // ==========================================================
@@ -164,5 +184,6 @@
     setupLangToggle();
     loadTranslations();
     loadCases();
+    setupReveal();
   });
 })();
