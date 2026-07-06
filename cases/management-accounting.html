@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management Accounting — Anastasia Ovsyannikova</title>
+  <meta name="description" content="An internal management-accounting system for HR and finance teams at Rambler.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo">Anastasia Ovsyannikova</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span data-lang-btn="en">EN</span>
+          <span class="lang-toggle__sep">/</span>
+          <span data-lang-btn="ru">RU</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="case container">
+    <a href="../index.html#projects" class="case__back" data-i18n="case.back">← Back to projects</a>
+    <p class="mono case__breadcrumb">Rambler &amp; Co · Internal · Finance</p>
+    <h1 class="case__title" data-lang-content>
+      <span data-lang="en">Management Accounting</span>
+      <span data-lang="ru">Учётная система</span>
+    </h1>
+    <div class="case__lead" data-lang-content>
+      <p data-lang="en">Designing the HR admin console. It has three separate parts: seating (personnel movement), organizational change management, and budget correction.</p>
+      <p data-lang="ru">Задача состояла в проектировании и разработке дизайна личного кабинета HR. Он состоит из трёх отдельных частей: рассадка, сопровождение организационных изменений и корректировка бюджета.</p>
+    </div>
+
+    <dl class="case__meta">
+      <div><dt class="mono" data-i18n="case.role">Role</dt><dd>Product Designer</dd></div>
+      <div><dt class="mono" data-i18n="case.timeline">Timeline</dt><dd>2019</dd></div>
+      <div><dt class="mono" data-i18n="case.team">Team</dt><dd>PM, engineers</dd></div>
+      <div><dt class="mono" data-i18n="case.result">Result</dt><dd>Shipped internally</dd></div>
+    </dl>
+
+    <figure class="case__hero">
+      <img src="../images/projects/management-accounting/main.png" alt="Management Accounting main screen">
+    </figure>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.problem">The Problem</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>In the "Seating" section, HR hires, dismisses, or transfers employees between positions. Each employee has a budget position (BP) — a slot in the company budget they occupy.</p>
+          <p>The tool had to let HR attach a new employee to a BP, free a BP when someone was dismissed, or move an employee from one BP to another while updating attributes. We tested two ways to show budget positions.</p>
+        </div>
+        <div data-lang="ru">
+          <p>В разделе «Рассадка» осуществляется приём, увольнение и перевод сотрудника на другую должность. У каждого сотрудника есть своя бюджетная позиция (БП) — слот в бюджете компании, который он занимает.</p>
+          <p>Функционал должен позволять прикреплять нового сотрудника к БП, освобождать её от уволенного сотрудника или перемещать сотрудника с одной БП на другую, с изменением необходимых параметров. Мы протестировали два варианта отображения бюджетных позиций.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.process">The Process</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>First — a familiar table view where detail opens on a new page.</p>
+          <figure><img src="../images/projects/management-accounting/1.png" alt="Table view of budget positions"></figure>
+          <p>Second — cards with detail info on the right side of the same screen.</p>
+          <figure><img src="../images/projects/management-accounting/2.png" alt="Card view with detail panel"></figure>
+          <p>Testing showed the card view worked better: everything happens on one screen, and it's faster to search and browse employees. From there we worked out flows for two scenarios.</p>
+          <p>Scenario 1 — change an existing BP (parental leave, dismissal, or transfer to another role).</p>
+          <figure><img src="../images/projects/management-accounting/3.png" alt="Scenario for changing a BP"></figure>
+          <p>Scenario 2 — search or create a new BP (hiring a new employee).</p>
+          <figure><img src="../images/projects/management-accounting/4.png" alt="Scenario for creating a new BP"></figure>
+        </div>
+        <div data-lang="ru">
+          <p>Первый — привычные таблицы, где детальная информация открывается на новой странице.</p>
+          <figure><img src="../images/projects/management-accounting/1.png" alt="Табличный вид"></figure>
+          <p>Второй — карточки с детальной информацией справа.</p>
+          <figure><img src="../images/projects/management-accounting/2.png" alt="Карточный вид с деталями справа"></figure>
+          <p>По результатам тестирования пользователи выбрали второй вариант — он оказался удобнее для быстрого поиска и просмотра сотрудников, потому что вся работа ведётся на одном экране. Были проработаны схемы для двух сценариев.</p>
+          <p>Сценарий 1 — изменение существующей БП (перевод сотрудника в декрет, увольнение или перевод на другую должность).</p>
+          <figure><img src="../images/projects/management-accounting/3.png" alt="Сценарий изменения БП"></figure>
+          <p>Сценарий 2 — поиск или создание новой БП (например, при приёме на работу).</p>
+          <figure><img src="../images/projects/management-accounting/4.png" alt="Сценарий создания новой БП"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.solution">The Solution</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>The main screen lets HR quickly find an employee card and see their details — which BP they occupy, personal info, employee page on the internal portal, and so on. Detailed info is split into semantic blocks that can be collapsed.</p>
+          <figure><img src="../images/projects/management-accounting/5.png" alt="Main screen with collapsible detail blocks"></figure>
+          <p>If HR needs to move someone into parental leave, dismiss them, or transfer them, they go to the processing screen and make the changes. The details from the main screen stay available so users can reference them.</p>
+          <figure><img src="../images/projects/management-accounting/6.png" alt="Processing screen"></figure>
+          <p>If HR needs to attach an employee to a BP (like during hiring), they can create a new BP or find an existing empty one.</p>
+          <figure><img src="../images/projects/management-accounting/7.png" alt="Attach to a BP flow"></figure>
+          <p>Inside the card there's a shortcut to attach an employee, switch to editing, or view core BP info.</p>
+          <figure><img src="../images/projects/management-accounting/8.png" alt="Card actions"></figure>
+        </div>
+        <div data-lang="ru">
+          <p>На главной странице HR может быстро найти нужную карточку сотрудника и посмотреть детальную информацию: к какой БП прикреплён, личные данные, страницу на внутреннем портале и т.д. Детальная информация разбита на смысловые блоки, которые при желании можно свернуть.</p>
+          <figure><img src="../images/projects/management-accounting/5.png" alt="Главный экран со сворачиваемыми блоками деталей"></figure>
+          <p>Если HR нужно перевести сотрудника в декрет, уволить или перевести на новую должность, он переходит на экран обработки и вносит изменения. Детальная информация с главного экрана остаётся доступной для справки.</p>
+          <figure><img src="../images/projects/management-accounting/6.png" alt="Экран обработки изменений"></figure>
+          <p>Если HR нужно прикрепить сотрудника к БП (например, при приёме на работу), он попадает на экран, где можно создать новую БП или найти существующую пустую.</p>
+          <figure><img src="../images/projects/management-accounting/7.png" alt="Прикрепление сотрудника к БП"></figure>
+          <p>В карточке можно сразу прикрепить сотрудника, перейти в редактирование или посмотреть основную информацию по БП.</p>
+          <figure><img src="../images/projects/management-accounting/8.png" alt="Действия в карточке"></figure>
+        </div>
+      </div>
+    </section>
+
+    <a href="geoanalytics.html" class="case__next" data-i18n="case.next">Next project →</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="mono" data-i18n="footer.copyright">© 2026 Anastasia Ovsyannikova</p>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry">Email</a>
+        <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../script.js" data-base="../"></script>
+</body>
+</html>
