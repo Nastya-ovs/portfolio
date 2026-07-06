@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operator's account — Anastasia Ovsyannikova</title>
+  <meta name="description" content="Redesigned the Citymobil call-center interface, reducing average call duration by 30%.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo">Anastasia Ovsyannikova</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span data-lang-btn="en">EN</span>
+          <span class="lang-toggle__sep">/</span>
+          <span data-lang-btn="ru">RU</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="case container">
+    <a href="../index.html#projects" class="case__back" data-i18n="case.back">← Back to projects</a>
+    <p class="mono case__breadcrumb">Citymobil · Internal · Call center</p>
+    <h1 class="case__title" data-lang-content>
+      <span data-lang="en">Operator's account</span>
+      <span data-lang="ru">Кабинет оператора</span>
+    </h1>
+    <div class="case__lead" data-lang-content>
+      <p data-lang="en">At Citymobil I designed a new interface for call-center operators taking incoming orders from clients. The team was me, my design lead, a product manager, and an engineer. The goal was to analyze the old tool and build a better one — cutting call duration and operator errors.</p>
+      <p data-lang="ru">В Ситимобил я работала над новым кабинетом для операторов колл-центра, принимающих входящие заказы от клиентов. Команда состояла из меня, тимлида, продакт-менеджера и разработчика. Нужно было проанализировать старый инструмент и сделать новый — удобнее, чтобы сократить время звонка и уменьшить количество ошибок оператора.</p>
+    </div>
+
+    <dl class="case__meta">
+      <div><dt class="mono" data-i18n="case.role">Role</dt><dd>Product Designer</dd></div>
+      <div><dt class="mono" data-i18n="case.timeline">Timeline</dt><dd>2020 — 2021</dd></div>
+      <div><dt class="mono" data-i18n="case.team">Team</dt><dd>PM, design lead, 1 engineer</dd></div>
+      <div><dt class="mono" data-i18n="case.result">Result</dt><dd>−30% avg call duration</dd></div>
+    </dl>
+
+    <figure class="case__hero">
+      <img src="../images/projects/operators-account/main.png" alt="Operator's account main screen">
+    </figure>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.problem">The Problem</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>We wanted to understand how operators actually worked — which features they used most, and which parts of their script wasted the most time. After studying the operators' knowledge base, their comments, and sitting in on real calls, we surfaced this list of problems:</p>
+          <ol>
+            <li>Address search was unreliable. Operators often couldn't find the address in the autosuggest or on the map — sometimes because the address wasn't there, sometimes because they missed it in suggestions.</li>
+            <li>Entering additional trip information was manual. Operators had to type in entrance number, notes for a third child seat, or multiple pets by hand.</li>
+            <li>Operators frequently missed a client's outstanding debt — the amount didn't sum with the trip cost, and creating an order wasn't blocked.</li>
+            <li>Many operators didn't know where to check client bonuses.</li>
+            <li>Ordering several cars to one address wasted time — the operator had to place an order, duplicate it, re-enter the address, and repeat.</li>
+          </ol>
+          <p>We then looked at usage data to see how often operators used each function. Some blocks took up lots of space and were barely used; some rarely-used options crowded the layout.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Сначала мы хотели понять, как операторы работают, чем они чаще всего пользуются и какие части их скрипта отнимают больше всего времени. После изучения базы знаний операторов, их комментариев, а также после присутствия на реальных звонках был сформирован список проблем:</p>
+          <ol>
+            <li>Проблемы с поиском адреса. Операторы часто не находили нужный адрес ни в саджесте, ни на карте — иногда потому что адреса действительно не было, иногда потому что не замечали его в саджесте.</li>
+            <li>Проблемы с вводом дополнительной информации к поездке. Информацию о подъезде, о третьем ребёнке с детским креслом, о нескольких животных приходилось вводить вручную.</li>
+            <li>Операторы часто не замечали информацию о долге клиента — сумма долга не суммировалась с суммой поездки, и возможность создать заказ не блокировалась.</li>
+            <li>Многие операторы не знали, где смотреть информацию о бонусах клиента.</li>
+            <li>Сценарий с несколькими машинами на один адрес отнимал много времени — оператору нужно было оформлять заказ, дублировать его, снова вводить адрес и так несколько раз.</li>
+          </ol>
+          <p>После этого мы посмотрели статистику, чтобы понять, как часто операторы пользуются функциями программы. Стало понятно, что некоторые блоки занимают много места и по сути не используются, а много опций и пожеланий применяются очень редко.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.process">The Process</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>The design had to account for the fact that support-service operators sometimes rotated onto the order-line. Their support tool had a new interface, so shared UI elements needed to stay consistent between the two products.</p>
+          <p>We removed everything unnecessary and simplified the main scenarios that operators struggled with.</p>
+        </div>
+        <div data-lang="ru">
+          <p>В дизайне нужно было учесть, что сервисом также могут пользоваться операторы службы поддержки, которых периодически направляли работать на приём заказов. У них уже был новый интерфейс для работы поддержки, и было важно, чтобы общие элементы в интерфейсах совпадали.</p>
+          <p>Мы убрали всё лишнее и упростили основные сценарии, с которыми у операторов были проблемы.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.solution">The Solution</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>After research we mapped which blocks were high-value and which were noise, then rebuilt the core flow.</p>
+          <figure><img src="../images/projects/operators-account/1.png" alt="Research findings mapped onto the interface"></figure>
+          <p>Key changes:</p>
+          <ol>
+            <li>A dedicated field for entrance number, so operators didn't have to squeeze it into "wishes".</li>
+            <li>The most-used wishes surfaced as bottom tags, so operators didn't type them manually.</li>
+            <li>Unused options were removed; remaining ones sorted by frequency.</li>
+            <li>Multi-car ordering was possible without closing and duplicating the order.</li>
+          </ol>
+          <figure><img src="../images/projects/operators-account/2.png" alt="Redesigned main flow"></figure>
+          <p>We also moved client bonuses to a visible spot, removed a secondary phone and company name field that only mattered for corporate clients, and kept the map always visible instead of behind a toggle.</p>
+          <figure><img src="../images/projects/operators-account/3.png" alt="Client info and map layout"></figure>
+          <p>15 operators tested the design. Most of the flow worked, but we found new issues: child seat expected to be near "pets", tag placement below the wish input confused some, and tariff-switching + date-editing icons weren't obvious.</p>
+          <figure><img src="../images/projects/operators-account/4.png" alt="Follow-up design tweaks after testing"></figure>
+          <p>In the follow-up round we added text labels to icons and pushed frequent wishes back into the autosuggest so operators could add them any way they preferred. In re-testing the option search worked cleanly. We also finalized the layout for corporate clients.</p>
+          <figure><img src="../images/projects/operators-account/5.png" alt="Corporate client layout"></figure>
+        </div>
+        <div data-lang="ru">
+          <p>После исследования мы разметили, какие блоки — ценные, а какие — шум, и перестроили основной флоу.</p>
+          <figure><img src="../images/projects/operators-account/1.png" alt="Результаты исследования на интерфейсе"></figure>
+          <p>Ключевые изменения:</p>
+          <ol>
+            <li>Отдельное поле для подъезда, чтобы оператору не нужно было вводить эту информацию в пожелания.</li>
+            <li>Самые часто используемые пожелания в виде тегов внизу, чтобы оператору не приходилось вводить их вручную.</li>
+            <li>Убрали неиспользуемые опции, оставшиеся разместили в порядке частоты использования.</li>
+            <li>Возможность заказать сразу несколько машин на один адрес — без закрытия и копирования заказа.</li>
+          </ol>
+          <figure><img src="../images/projects/operators-account/2.png" alt="Переработанный основной флоу"></figure>
+          <p>Информацию о баллах клиента вынесли на более видное место. Убрали дополнительный номер телефона и название компании — эта информация нужна только корпоративным клиентам. Карта теперь всегда на виду и не требует отдельного включения.</p>
+          <figure><img src="../images/projects/operators-account/3.png" alt="Информация о клиенте и карта"></figure>
+          <p>В тестировании участвовали 15 операторов. Большая часть работала как ожидалось, но выявились новые проблемы: операторы искали добавление питомца рядом с детским креслом, теги под полем пожеланий не всем были понятны, иконки смены тарифа и даты отложенной поездки казались неочевидными.</p>
+          <figure><img src="../images/projects/operators-account/4.png" alt="Доработки после тестирования"></figure>
+          <p>В доработке добавили к иконкам текстовые описания, а частые пожелания вернули в саджест — оператор может добавить их любым удобным способом. При повторном тестировании поиск опций не вызывал проблем. Также проработали макет для корпоративного клиента.</p>
+          <figure><img src="../images/projects/operators-account/5.png" alt="Макет для корпоративного клиента"></figure>
+        </div>
+      </div>
+    </section>
+
+    <a href="meeting-rooms.html" class="case__next" data-i18n="case.next">Next project →</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="mono" data-i18n="footer.copyright">© 2026 Anastasia Ovsyannikova</p>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry">Email</a>
+        <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../script.js" data-base="../"></script>
+</body>
+</html>
