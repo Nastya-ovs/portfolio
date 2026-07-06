@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geoanalytics — Anastasia Ovsyannikova</title>
+  <meta name="description" content="A tool for operating managers to spot supply/demand imbalance across cities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo">Anastasia Ovsyannikova</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span data-lang-btn="en">EN</span>
+          <span class="lang-toggle__sep">/</span>
+          <span data-lang-btn="ru">RU</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="case container">
+    <a href="../index.html#projects" class="case__back" data-i18n="case.back">← Back to projects</a>
+    <p class="mono case__breadcrumb">Citymobil · B2B · Data Viz</p>
+    <h1 class="case__title" data-lang-content>
+      <span data-lang="en">Geoanalytics</span>
+      <span data-lang="ru">Геоаналитика</span>
+    </h1>
+    <div class="case__lead" data-lang-content>
+      <p data-lang="en">At Citymobil I designed the Geoanalytics module inside Atlas — an analytics system that helps managers understand overall city conditions and choose mechanics to shift supply/demand balance.</p>
+      <p data-lang="ru">В Ситимобил я работала над интерфейсом Геоаналитики — раздела продукта Атлас. Атлас — аналитическая система, которая помогает менеджерам оценить общее состояние города и выбрать механики для изменения баланса спроса и предложения.</p>
+    </div>
+
+    <dl class="case__meta">
+      <div><dt class="mono" data-i18n="case.role">Role</dt><dd>Product Designer</dd></div>
+      <div><dt class="mono" data-i18n="case.timeline">Timeline</dt><dd>2021 — 2022</dd></div>
+      <div><dt class="mono" data-i18n="case.team">Team</dt><dd>PM, 4 engineers</dd></div>
+      <div><dt class="mono" data-i18n="case.result">Result</dt><dd>Shipped to ops managers</dd></div>
+    </dl>
+
+    <figure class="case__hero">
+      <img src="../images/projects/geoanalytics/main.png" alt="Geoanalytics dashboard overview">
+    </figure>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.problem">The Problem</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>Operating managers needed to assess city conditions over a period (a week, a month, several months) to see whether promotions worked, spot trends, and plan long-term strategy.</p>
+          <p>Before Geoanalytics they used several sources at once: metrics tables in Tableau, and a separate service with heat maps per metric. On any filter change the map service reloaded slowly. To build a report managers took screenshots from both and compared them by hand. It was slow and painful.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Операционным менеджерам нужно было оценивать ситуацию в городе за период (неделя, месяц, несколько месяцев) — понять, сработали ли акции, увидеть тенденции, принять долгосрочную стратегию исправления дисбаланса.</p>
+          <p>До Геоаналитики менеджеры пользовались сразу несколькими источниками: таблицы с метриками в Tableau, отдельный сервис с тепловыми картами по каждой метрике. При малейшем изменении фильтров карта долго грузилась. Чтобы сделать отчёт, менеджеры делали скриншоты из обоих сервисов и сопоставляли между собой — это было неудобно и отнимало много времени.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.process">The Process</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>We needed a single service that combined supply and demand data across all business metrics, and let managers view metrics both as tables and on a map when applicable. This would let them react to supply/demand shifts faster and use their promotion budgets more effectively.</p>
+        </div>
+        <div data-lang="ru">
+          <p>Нужен был сервис, который объединял бы информацию о спросе и предложении на основе всех известных бизнес-показателей и давал возможность смотреть метрики и в таблице, и на карте — когда это возможно для выбранного типа метрик. Это позволило бы оперативнее реагировать на изменения спроса/предложения и эффективнее распоряжаться миллионами рублей, которые менеджеры тратили на промо.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.solution">The Solution</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>By default the manager sees a table of all metrics across cities in the selected region. On the right, week-over-week changes are shown in %, so managers can quickly see how each metric shifted from the previous week.</p>
+          <figure><img src="../images/projects/geoanalytics/1.png" alt="Default table view of metrics across cities"></figure>
+          <p>After clicking on chosen metrics in the table, their card view and a map appear.</p>
+          <figure><img src="../images/projects/geoanalytics/2.png" alt="Card view and map for selected metrics"></figure>
+          <p>Managers can click into a region on the map to see metrics for just that slice.</p>
+          <figure><img src="../images/projects/geoanalytics/3.png" alt="Region-specific metrics on the map"></figure>
+          <p>Metrics can be added not only from the table, but from search sorted by category.</p>
+          <figure><img src="../images/projects/geoanalytics/4.png" alt="Search across metrics by category"></figure>
+          <p>We also added presets — system presets, or ones managers can create themselves.</p>
+          <figure><img src="../images/projects/geoanalytics/5.png" alt="Preset system for managers"></figure>
+        </div>
+        <div data-lang="ru">
+          <p>Изначально менеджер видит таблицу со всеми метриками по городам в выбранной области. Справа в процентах показывается week-over-week — чтобы менеджер мог сразу понять, как изменилась метрика по сравнению с прошлой неделей.</p>
+          <figure><img src="../images/projects/geoanalytics/1.png" alt="Таблица метрик по городам"></figure>
+          <p>После клика на нужные метрики в таблице появляется их карточное представление и карта.</p>
+          <figure><img src="../images/projects/geoanalytics/2.png" alt="Карточки и карта выбранных метрик"></figure>
+          <p>На карте можно кликнуть в нужную область и посмотреть метрики именно для этого кусочка.</p>
+          <figure><img src="../images/projects/geoanalytics/3.png" alt="Метрики выбранной области на карте"></figure>
+          <p>Метрики можно добавлять не только из таблицы, но и из поиска, где они отсортированы по категориям.</p>
+          <figure><img src="../images/projects/geoanalytics/4.png" alt="Поиск по категориям метрик"></figure>
+          <p>Добавили возможность использовать пресеты — системные, либо создавать свои.</p>
+          <figure><img src="../images/projects/geoanalytics/5.png" alt="Пресеты для менеджеров"></figure>
+        </div>
+      </div>
+    </section>
+
+    <a href="intranet.html" class="case__next" data-i18n="case.next">Next project →</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="mono" data-i18n="footer.copyright">© 2026 Anastasia Ovsyannikova</p>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry">Email</a>
+        <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../script.js" data-base="../"></script>
+</body>
+</html>

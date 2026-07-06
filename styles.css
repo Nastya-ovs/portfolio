@@ -564,3 +564,105 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; }
   .contact { padding-bottom: var(--space-section-mobile); }
   .contact__blurb { font-size: 24px; }
 }
+
+/* ============================================================
+   Case study page
+   ============================================================ */
+.case {
+  padding-top: 32px;
+  padding-bottom: var(--space-section);
+  max-width: 900px;
+}
+
+.case__back {
+  display: inline-block;
+  color: var(--color-text-muted);
+  font-size: var(--size-small);
+  margin-bottom: 32px;
+  transition: color 0.15s ease;
+}
+.case__back:hover { color: var(--color-text); }
+
+.case__breadcrumb {
+  margin-bottom: 12px;
+}
+
+.case__title {
+  font-size: var(--size-hero);
+  margin-bottom: 20px;
+}
+
+.case__lead {
+  font-size: 20px;
+  color: var(--color-text-muted);
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+.case__meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 20px;
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-card);
+  margin-bottom: 48px;
+}
+
+.case__meta > div { display: flex; flex-direction: column; }
+.case__meta dt { margin-bottom: 4px; }
+.case__meta dd { font-weight: 500; font-size: var(--size-body); }
+
+.case__hero {
+  margin-bottom: 64px;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.case__hero img { width: 100%; height: auto; }
+
+.case__section { margin-bottom: 64px; }
+
+.case__section-title {
+  font-size: var(--size-section);
+  margin-bottom: 20px;
+}
+
+.case__prose p {
+  max-width: 720px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+
+.case__prose ol { max-width: 720px; margin-bottom: 20px; padding-left: 24px; }
+.case__prose ol li { margin-bottom: 8px; font-size: 18px; }
+
+.case__prose figure {
+  margin: 32px 0;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 0.5px solid var(--color-border);
+}
+
+.case__prose figure img { width: 100%; height: auto; display: block; }
+
+.case__next {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  background: var(--color-text);
+  color: var(--color-bg);
+  font-weight: 500;
+  transition: transform 0.15s ease;
+}
+.case__next:hover { transform: translateY(-1px); }
+
+@media (max-width: 767px) {
+  .case { padding-bottom: var(--space-section-mobile); }
+  .case__meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .case__lead { font-size: 17px; }
+}

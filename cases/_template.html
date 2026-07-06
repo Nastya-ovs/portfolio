@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[CASE NAME] — Anastasia Ovsyannikova</title>
+  <meta name="description" content="[CASE SUMMARY]">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo">Anastasia Ovsyannikova</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html#projects" data-i18n="nav.projects">Projects</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span data-lang-btn="en">EN</span>
+          <span class="lang-toggle__sep">/</span>
+          <span data-lang-btn="ru">RU</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="case container">
+    <a href="../index.html#projects" class="case__back" data-i18n="case.back">← Back to projects</a>
+    <p class="mono case__breadcrumb">[CLIENT] · [CATEGORY]</p>
+    <h1 class="case__title" data-lang-content>
+      <span data-lang="en">[NAME EN]</span>
+      <span data-lang="ru">[NAME RU]</span>
+    </h1>
+    <div class="case__lead" data-lang-content>
+      <p data-lang="en">[LEAD EN]</p>
+      <p data-lang="ru">[LEAD RU]</p>
+    </div>
+
+    <dl class="case__meta">
+      <div><dt class="mono" data-i18n="case.role">Role</dt><dd>Product Designer</dd></div>
+      <div><dt class="mono" data-i18n="case.timeline">Timeline</dt><dd>[YEAR]</dd></div>
+      <div><dt class="mono" data-i18n="case.team">Team</dt><dd>[TEAM]</dd></div>
+      <div><dt class="mono" data-i18n="case.result">Result</dt><dd>[RESULT]</dd></div>
+    </dl>
+
+    <figure class="case__hero">
+      <img src="../images/projects/[SLUG]/main.png" alt="[ALT]">
+    </figure>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.problem">The Problem</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en"><p>[PROBLEM EN]</p></div>
+        <div data-lang="ru"><p>[ПРОБЛЕМА RU]</p></div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.process">The Process</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en"><p>[PROCESS EN]</p></div>
+        <div data-lang="ru"><p>[PROCESS RU]</p></div>
+      </div>
+    </section>
+
+    <section class="case__section">
+      <h2 class="case__section-title" data-i18n="case.solution">The Solution</h2>
+      <div class="case__prose" data-lang-content>
+        <div data-lang="en">
+          <p>[SOLUTION P1 EN]</p>
+          <figure><img src="../images/projects/[SLUG]/1.png" alt=""></figure>
+        </div>
+        <div data-lang="ru">
+          <p>[РЕШЕНИЕ P1 RU]</p>
+          <figure><img src="../images/projects/[SLUG]/1.png" alt=""></figure>
+        </div>
+      </div>
+    </section>
+
+    <a href="[NEXT_SLUG].html" class="case__next" data-i18n="case.next">Next project →</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="mono" data-i18n="footer.copyright">© 2026 Anastasia Ovsyannikova</p>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry">Email</a>
+        <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../script.js" data-base="../"></script>
+</body>
+</html>

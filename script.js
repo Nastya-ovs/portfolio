@@ -40,6 +40,12 @@
       el.classList.toggle('is-active', el.getAttribute('data-lang-btn') === lang);
     });
 
+    document.querySelectorAll('[data-lang-content]').forEach((wrap) => {
+      wrap.querySelectorAll('[data-lang]').forEach((child) => {
+        child.style.display = (child.getAttribute('data-lang') === lang) ? '' : 'none';
+      });
+    });
+
     renderCases(lang);
     currentLang = lang;
     storeLang(lang);
