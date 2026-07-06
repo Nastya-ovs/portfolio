@@ -25,6 +25,14 @@
         <a href="#projects" data-i18n="nav.projects">Projects</a>
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="Ovsyannikova_CV.pdf" download class="nav-resume" data-i18n="nav.resume">
+          <span>Resume</span>
+          <svg class="nav-resume__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
         <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
           <span class="lang-toggle__en" data-lang-btn="en">EN</span>
           <span class="lang-toggle__sep">/</span>
@@ -36,16 +44,26 @@
 
   <main>
     <section class="hero container" data-reveal>
-      <h1 class="hero__title" data-i18n="hero.title">Product Design for complex systems</h1>
-      <p class="hero__subtitle">
-        <span data-i18n="hero.subtitle_1">Simplifying B2B complexity.</span>
-        <span data-i18n="hero.subtitle_2">Designing platform systems.</span>
-        <span data-i18n="hero.subtitle_3">Shipping enterprise UX.</span>
-      </p>
-      <p class="hero__background mono" data-i18n="hero.background">Currently at Kaspersky, designing XDR & SIEM.</p>
+      <div class="hero__badge">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        <span data-i18n="hero.badge">Open to full-time roles</span>
+      </div>
+      <h1 class="hero__title" data-lang-content>
+        <span data-lang="en">I turn complex product logic into <em>clear, scalable user experiences.</em></span>
+        <span data-lang="ru">Превращаю сложную продуктовую логику в <em>понятный масштабируемый пользовательский опыт.</em></span>
+      </h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle"></p>
+      <div class="hero__tags">
+        <span class="hero__tag">B2B Product Design</span>
+        <span class="hero__tag">Enterprise UX</span>
+        <span class="hero__tag">Complex Workflows</span>
+        <span class="hero__tag">Data-heavy Interfaces</span>
+        <span class="hero__tag">Information Architecture</span>
+        <span class="hero__tag">Design Systems</span>
+      </div>
       <div class="hero__cta">
-        <a href="#projects" class="btn btn--primary" data-i18n="hero.cta_primary">View my work</a>
-        <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry" class="btn btn--outline" data-i18n="hero.cta_secondary">Get in touch</a>
+        <a href="#projects" class="btn btn--primary" data-i18n="hero.cta_primary">View Case Studies ↓</a>
+        <a href="Ovsyannikova_CV.pdf" download class="btn btn--outline" data-i18n="hero.cta_secondary">Download Resume ↗</a>
       </div>
     </section>
 
@@ -219,7 +237,7 @@
             <span data-lang="en">If you're solving hard design problems, <em>let's talk.</em></span>
             <span data-lang="ru">Если вы решаете сложные дизайн-задачи, <em>давайте поговорим.</em></span>
           </h2>
-          <p class="contact-card__blurb" data-i18n="contact.blurb">Open to product design roles at companies that treat design as a strategic function. B2B, enterprise, platform UX.</p>
+          <p class="contact-card__blurb" data-i18n="contact.blurb">Open to full-time Product Designer roles in B2B and enterprise products with relocation support. I'm looking for hybrid or on-site teams where design is treated as a strategic function — from discovery and IA to complex workflows, design systems, and shipped product experiences.</p>
           <div class="contact-card__cta">
             <a href="mailto:nastya.ovs2016@gmail.com?subject=Portfolio%20inquiry" class="btn btn--primary" data-i18n="contact.email_button">Send me an email ↗</a>
             <a href="https://www.linkedin.com/in/aovsyannikova/" target="_blank" rel="noopener" class="btn btn--outline" data-i18n="contact.linkedin_button">LinkedIn ↗</a>
@@ -227,23 +245,19 @@
         </div>
         <div class="contact-card__right">
           <div class="contact-tile">
-            <p class="mono" data-i18n="contact.tile_location">Location</p>
-            <p class="contact-tile__value" data-i18n="contact.tile_location_value">Russia · Remote-friendly</p>
-          </div>
-          <div class="contact-tile">
             <p class="mono" data-i18n="contact.tile_availability">Availability</p>
             <p class="contact-tile__value contact-tile__value--status">
               <span class="contact__status-dot" aria-hidden="true"></span>
-              <span data-i18n="contact.status_available">Currently available</span>
+              <span data-i18n="contact.status_available">Open to work</span>
             </p>
           </div>
           <div class="contact-tile">
-            <p class="mono" data-i18n="contact.tile_focus">Focus</p>
-            <p class="contact-tile__value" data-i18n="contact.tile_focus_value">Enterprise B2B · Platform UX · Design systems</p>
+            <p class="mono" data-i18n="contact.tile_format">Preferred format</p>
+            <p class="contact-tile__value" data-i18n="contact.tile_format_value">On-site · Hybrid</p>
           </div>
           <div class="contact-tile">
             <p class="mono" data-i18n="contact.tile_languages">Languages</p>
-            <p class="contact-tile__value" data-i18n="contact.tile_languages_value">Russian · English</p>
+            <p class="contact-tile__value" data-i18n="contact.tile_languages_value">Русский · English</p>
           </div>
         </div>
       </div>
