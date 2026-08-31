@@ -5,3 +5,6 @@ node_modules/
 .idea/
 Thumbs.db
 .claude/
+
+# Unencrypted case sources (kept local for editing)
+cases/_source/

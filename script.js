@@ -177,6 +177,61 @@
   };
 
   // ==========================================================
+  // Sliders (each .slider with .slider__track & N .slider__slide)
+  // ==========================================================
+  const setupSliders = () => {
+    document.querySelectorAll('.slider').forEach((slider) => {
+      const track = slider.querySelector('.slider__track');
+      const slides = slider.querySelectorAll('.slider__slide');
+      if (!track || slides.length < 2) return;
+
+      let index = 0;
+
+      // Build dots
+      const dotsWrap = document.createElement('div');
+      dotsWrap.className = 'slider__dots';
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'slider__dot' + (i === 0 ? ' is-active' : '');
+        dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(dot);
+      });
+      slider.appendChild(dotsWrap);
+
+      // Prev/next arrows
+      const prev = document.createElement('button');
+      prev.type = 'button';
+      prev.className = 'slider__arrow slider__arrow--prev';
+      prev.innerHTML = '←';
+      prev.setAttribute('aria-label', 'Previous slide');
+      prev.addEventListener('click', () => goTo(index - 1));
+      slider.appendChild(prev);
+
+      const next = document.createElement('button');
+      next.type = 'button';
+      next.className = 'slider__arrow slider__arrow--next';
+      next.innerHTML = '→';
+      next.setAttribute('aria-label', 'Next slide');
+      next.addEventListener('click', () => goTo(index + 1));
+      slider.appendChild(next);
+
+      const dots = dotsWrap.querySelectorAll('.slider__dot');
+
+      const goTo = (i) => {
+        index = Math.max(0, Math.min(slides.length - 1, i));
+        track.style.transform = 'translateX(' + (-index * 100) + '%)';
+        dots.forEach((d, di) => d.classList.toggle('is-active', di === index));
+        prev.toggleAttribute('disabled', index === 0);
+        next.toggleAttribute('disabled', index === slides.length - 1);
+      };
+
+      goTo(0);
+    });
+  };
+
+  // ==========================================================
   // Init
   // ==========================================================
   document.addEventListener('DOMContentLoaded', () => {
@@ -185,5 +240,6 @@
     loadTranslations();
     loadCases();
     setupReveal();
+    setupSliders();
   });
 })();

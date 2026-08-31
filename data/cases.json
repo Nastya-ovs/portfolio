@@ -1,6 +1,20 @@
 {
   "selected": [
     {
+      "slug": "ai-assistance",
+      "protected": true,
+      "cover": "images/projects/ai-assistance/cover.svg",
+      "client": "Kaspersky",
+      "category": "AI · Platform",
+      "year": "2024-2025",
+      "name_en": "Designing AI Assistance",
+      "name_ru": "Проектирование AI-ассистента",
+      "summary_en": "KIRA-powered AI workflows inside Kaspersky OSMP — helping SOC analysts generate SQL, explain event fields, and craft normalization patterns.",
+      "summary_ru": "AI-воркфлоу на KIRA внутри Kaspersky OSMP — генерируют SQL, объясняют поля событий и собирают паттерны нормализации для SOC-аналитиков.",
+      "metric_en": "4 AI workflows in production",
+      "metric_ru": "4 AI-воркфлоу в продакшне"
+    },
+    {
       "slug": "geoanalytics",
       "protected": false,
       "cover": "images/projects/geoanalytics/cover.png",
